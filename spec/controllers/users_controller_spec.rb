@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
   render_views
+ 
   describe "GET #new" do
     it "returns http success" do
       get :new
@@ -12,5 +13,5 @@ RSpec.describe UsersController, type: :controller do
       get :new
       expect(response.body).to have_title('Simple App du Tutoriel Ruby on Rails | S\'inscrire')
     end
-	end
+  end
 end
