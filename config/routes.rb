@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/contact',   to: 'pages#contact'
   get '/about',   to: 'pages#about'
   get '/help',   to: 'pages#help'
-  get 'users/new', to: 'users#new', as: '/signup'
+  get '/signup', to: 'users#new'
+  resources :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

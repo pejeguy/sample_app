@@ -10,7 +10,7 @@ RSpec.describe UsersController, type: :controller do
   
   	it "devrait avoir le bon titre" do
       get :new
-      expect(response.body).to have_title('Simple App du Tutoriel Ruby on Rails | Inscription')
+      expect(response.body).to have_title('Simple App du Tutoriel Ruby on Rails | S\'inscrire')
     end
 	end
 end
